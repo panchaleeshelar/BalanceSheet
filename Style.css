@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    color: lightseagreen;
+}
+
+.parent .toggle-sign {
+    
+    float: left;
+    margin-right: 5px;
+    color: lightseagreen;
+    text-align: center;
+    font-size: 20px;
+}
+.child{
+    display: none;
+    padding-left: 20px;
+}
+.child.open{
+    display: table-row-group;
+    margin-top: 10px;
+}
+#balance-sheet thead tr th:first-child{
+    text-align: left;
+}
+#balance-sheet thead tr th:last-child{
+    text-align: left;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+
+td:first-child {
+    border-left: none;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+td:not(:first-child):not(:last-child) {
+    border-left: none;
+    border-right: none;
+}
